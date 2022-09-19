@@ -47,7 +47,8 @@ header li a:hover {
 .sect_1 {
     background-image:url(img/dots-bg.png);
     background-image: url(img/texture-paper.png);
-    background-color: #F3976C;
+    background-size: 280px 280px;
+    background-color: #ffa176;
     height: 300px;
     display: flex;
     justify-content: center;
