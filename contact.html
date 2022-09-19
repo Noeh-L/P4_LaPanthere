@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Page contact de l'agence La Panthère, une agence de web design basé sur Lyon.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style_contact.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.jpg">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	
+    
+	<script src="./js/jquery-2.1.0.min.js" defer></script>
+	<script src="./js/bootstrap.min.js" defer></script>
+	<script src="./js/blocs.min.js" defer></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
+    
+    <title>La Panthère - Contact</title>
+</head>
+
+<body>
+    
+    <main>
+
+        <header>
+            <div>
+                <a href="index.html" class="logo"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo" title="Accueil"></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="sect_1">
+            <div>
+                <h1>Parlons web design !</h1>
+                <p>
+                    Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br />
+                    Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+                </p>
+            </div>
+        </section>
+
+        <section class="sect_2">
+
+            <form method="post" action="form_1.php">
+
+                <div>
+                    <label for="name">Nom</label><br />
+                    <input type="name" name="name" id="name" required />
+                </div>
+
+                <div>
+                    <label for="mail">Adresse mail</label><br />
+                    <input type="email" name="mail" id="mail" required />
+                </div>
+
+                <div>
+                    <label for="how">Comment nous avez-vous connu ?</label><br />
+                    <input type="text" name="how" id="how" required />
+                </div>
+
+                <div>
+                    <label for="brief">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label><br />
+                    <textarea type="text" name="brief" id="brief" rows="10" cols="40"></textarea>
+                </div>
+
+                <button type="submit">
+                    Envoyer
+                </button>
+
+            </form>
+
+            <p class="adresse">
+                contact@agencelapanthere.com<br />
+                2 place Sathonay - 69001 Lyon<br />
+                Ouvert de 9h à 18h, du lundi au vendredi<br />
+            </p>
+
+        </section>
+
+        <footer>
+            <div>
+                <p>Agence La Panthère - Agence web basée à Lyon.</p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
