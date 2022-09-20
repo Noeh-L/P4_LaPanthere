@@ -857,7 +857,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -899,7 +899,7 @@ h4 {
     }
 
     /* suppression du padding-left (erreur W3C) */
-    
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
