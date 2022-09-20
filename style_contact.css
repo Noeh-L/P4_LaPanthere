@@ -10,8 +10,8 @@ h1, h2, h3, h4, p, li, label {
     font-family: Helvetica, sans-serif;
 }
 
-header, .sect_2 {
-    width: 75%;
+header{
+    width: 80%;
     margin: auto;
 }
 
@@ -22,27 +22,38 @@ header {
 }
 
 header div img {
-    width: 100%;
+    width: 53%;
+    margin: 15px 0 0 110px;
 }
 
 header nav {
     width: 30%;
-}
-header nav ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-header li {
-    margin-right: 30px;
-    list-style: none;
-}
-header li a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-header li a:hover {
-    color: #f5570e;
-}
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        header li {
+            margin-right: 30px;
+            list-style: none;
+        }
+        header li a {
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+        }
+        header li a:hover {
+            color: #f5570e;
+        }
+        header li a:focus {
+            border: dotted 5px #f5570e;
+            outline-style: none;
+            padding: 5px;
+        }  
 
 .sect_1 {
     background-image:url(img/dots-bg.png);
@@ -53,6 +64,7 @@ header li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
     .sect_1 div {
         width: 60%;
@@ -68,9 +80,11 @@ header li a:hover {
         }
 
 
-
+     
 .sect_2 {
     padding-top: 25px;
+    width: 65%;
+    margin: auto;
 }
 
 form {
@@ -85,6 +99,11 @@ form {
         display: inline-block;
         margin-bottom: 4px;
     }
+    form input:focus, textarea:focus {
+        border: solid 5px #f5570e;
+        outline-style: none;
+        border-radius: 5px;
+    }
 
     form button {
         width: 10%;
@@ -98,13 +117,19 @@ form {
         cursor: pointer;
     }
     form button:hover {
-        background-color: #f8ae8b;
+        background-color: #f57d46;
         transition: all 0.2s ease-in;
+        color: white;
+    }
+    form button:focus {
+        outline: dotted 5px #f5570e;
+        color: white;
     }
 
     .adresse {
         margin-top: 50px;
         margin-bottom: 50px;
+        line-height: 25px;
     }
 
 footer {   
@@ -113,7 +138,7 @@ footer {
 }
 footer div {
     height: 50px;
-    width: 75%;
+    width: 65%;
     margin: auto;
     color: white;
 }

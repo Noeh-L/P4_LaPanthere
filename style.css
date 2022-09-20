@@ -19,6 +19,15 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+a:focus {
+    border: solid 5px #f5570e;
+    outline-style: none;
+    border-radius: 5px;
+}
+button:focus {
+    outline: dotted 5px #f5570e;
+    color: white;
+}
 
 /* SUPPRESSION DE #page-loading-blocs-notifaction  */
 
@@ -128,7 +137,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .a-btn:hover,
@@ -147,6 +156,7 @@ a:hover {
 .d-bloc p a:hover {
     color: rgba(255, 255, 255, 1);
 }
+
 
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
@@ -873,17 +883,7 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
+/* suppression des min-device-widht car déconseillé par W3C */
 
 @media (max-width: 991px) {
     .container {
@@ -897,21 +897,16 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
+    /* suppression du padding-left (erreur W3C) */
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
     }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    
+    /* suppression du padding-left (erreur W3C) */
 }
 
 @media (max-width: 767px) {
@@ -1064,4 +1059,11 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+footer {
+    background-color: #fddccc;
+}
+.fa-twitter:hover, .fa-faceboook:hover, .fa-dribble:hover, .fa-instagram:hover {
+    color: black;
 }
